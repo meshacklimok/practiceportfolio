@@ -1,0 +1,313 @@
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  display: flex;                     
+  justify-content: space-between;    
+  align-items: center;               
+  background-color: #007bff;        
+  padding: 15px 40px;               
+  color: white;
+}
+
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px;
+  color:#0066ff
+}
+
+
+.nav-links {
+  list-style: none;                 
+  display: flex;                   
+  gap: 30px;                        
+}
+
+
+.nav-links a {
+  text-decoration: none;            
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #ffeb3b;                  
+}
+
+/* Skills container */
+.skills-container {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Title */
+.skills-container h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* Skill cards */
+.skill {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: #555;
+  font-size: 0.95em;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  font-size: 0.9rem;}
+
+  /* Projects Grid */
+.flex-container{
+  display:flow-root;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.project-card {
+  background:rgb(230, 230, 230);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+.project-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.project-card a {
+  text-decoration: none;
+  color: #0078ff;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Navbar becomes stacked or toggled */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+
+  
+
+  /* Profile image smaller */
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Skills grid becomes single column */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project cards full width */
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: none;
+  }
+
+  /* Social icons centered */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+}
+
+
+/* 🌞 Default Light Mode */
+body {
+  background-color: #f9fafc;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Navbar - Light Mode */
+.navbar {
+  background-color: #b7e1ff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #004aad;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Skills + Projects Cards - Light Mode */
+.skill, .project-card {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.skill:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 74, 173, 0.2);
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+/* Navbar - Dark Mode */
+.dark-mode .navbar {
+  background-color: #161b22;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .navbar a {
+  color: #58a6ff;
+}
+
+.dark-mode .navbar a:hover {
+  color: #79c0ff;
+}
+
+/* Skill + Project Cards - Dark Mode */
+.dark-mode .skill, 
+.dark-mode .project-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .skill:hover, 
+.dark-mode .project-card:hover {
+  background-color: #1f2933;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(88, 166, 255, 0.2);
+}
+
+/* Links + Icons in Dark Mode */
+.dark-mode a {
+  color: #58a6ff;
+}
+
+.dark-mode a:hover {
+  color: #79c0ff;
+}
+
+/* Button (DOM Toggle) */
+#theme-toggle {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #0066ff;
+}
+
+.dark-mode #theme-toggle {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+.dark-mode #theme-toggle:hover {
+  background-color: #79c0ff;
+}
