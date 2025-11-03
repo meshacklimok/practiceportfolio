@@ -1,4 +1,4 @@
-# 🌐 Meshack's Tech Portfolio
+## Meshack's Tech Portfolio
 
 Welcome to Meshack’s Tech Portfolio— a modern, responsive personal website showcasing my skills, projects, and passion as a Front-End Web Developer.  
 Built using HTML, CSS, JavaScript, and Bootstrap 5, this portfolio demonstrates clean design, responsive layouts, and interactive user experiences.
