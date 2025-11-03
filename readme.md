@@ -50,3 +50,5 @@ When dark mode is activated:
 - The page background and text colors switch according to your dark-mode CSS rules.
 - The button text updates to indicate the active mode (Light Mode or Dark Mode).
 
+## Semantics
+- added semantics for easy seo
